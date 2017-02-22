@@ -7,12 +7,11 @@ while true
 do
  read -p "输入你猜的价格" INI
  let TIMES++
- if [ $INI -eq PRICE ]
- then
+ if [ $INI -eq $PRICE ] ; then
    echo "you ar right"
    echo "you guess $TIMES"
    exit 0
- elif [ $INI -gt $PRICE ]
+ elif [ $INI -gt $PRICE ] ; then
    echo "high"
  else
    echo "low"   
