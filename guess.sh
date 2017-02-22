@@ -9,6 +9,12 @@ do
  let TIMES++
  if [ $INI -eq PRICE ]
  then
- echo "you ar right"
+   echo "you ar right"
+   echo "you guess $TIMES"
+   exit 0
+ elif [ $INI -gt $PRICE ]
+   echo "high"
+ else
+   echo "low"   
  fi
 done
